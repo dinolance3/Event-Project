@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="login-container" id="loginContainer">
+        <div class="login-header">Login</div>
+        <div class="input-group">
+            <label for="email" class="input-label">Email</label>
+            <input type="text" id="loginEmail" class="input-field">
+        </div>
+        <div class="input-group">
+            <label for="password" class="input-label">Password</label>
+            <input type="password" id="loginPassword" class="input-field">
+        </div>
+        <button onclick="validateLogin()" class="submit-button">Log In</button>
+        <button onclick="redirectToSignup()" class="signup-button">Sign Up</button>
+        
+        <!-- Additional content from the first HTML file -->
+<!-- Add this to your HTML file -->
+<a href="index.html" class="back-to-home">Back to Home</a>
+        
+        <!-- Rest of your HTML content -->
+
+    </div>
+
+    <script src="login.js"></script>
+</body>
+
+</html>

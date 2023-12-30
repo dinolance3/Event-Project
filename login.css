@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.login-container {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: none; /* Remove the extra semicolon */
+}
+
+.login-header {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* ... rest of your CSS remains unchanged ... */
+
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.input-field {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.submit-button, .signup-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.submit-button {
+    background-color: #4caf50;
+    color: #fff;
+    margin-bottom: 10px; /* Add margin-bottom to create a gap */
+}
+
+.signup-button {
+    background-color: #17e2e6;
+    color: #fff;
+}
+
+.submit-button:hover, .signup-button:hover {
+    background-color: #45a049;
+}
+
+.success-message {
+    display: none;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+}
+/* Add this CSS to your existing login.css file or create a new one */
+
+/* Style for Back to Home link */
+a.back-to-home {
+    display: block;
+    margin-top: 20px; /* Adjust the spacing as needed */
+    text-decoration: none;
+    color: #3498db; /* Choose your desired color */
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+a.back-to-home:hover {
+    color: #2c3e50; /* Change the color on hover */
+}

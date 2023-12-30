@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Professional Profile</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="PRO.css">
+    <style>
+        /* Add your custom styles here */
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                <h4 class="font-weight-bold mb-0">Account Settings</h4>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="list-group account-settings-links">
+                            <a class="list-group-item list-group-item-action active" data-toggle="list"
+                                href="#account-general">General</a>
+                            <a class="list-group-item list-group-item-action" data-toggle="list"
+                                href="#account-change-password">Change Password</a>
+                            <a class="list-group-item list-group-item-action" data-toggle="list"
+                                href="#account-info">Create Event</a>
+                            <a class="list-group-item list-group-item-action" data-toggle="list"
+                                href="#dashboard">Dashboard</a>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="account-general">
+                                <div class="card-body media align-items-center">
+                                    <img src="https://bootdey.com/img/Content/avatar/avatar1.png"
+                                        alt class="d-block ui-w-80 mx-auto mb-3">
+                                    <div class="media-body text-center">
+                                        <h3>Nelle Maxwell</h3>
+                                        <p>Username: nmaxwell</p>
+                                        <p>Address: 123 Main St, Cityville</p>
+                                        <p>Email: nmaxwell@mail.com</p>
+                                        <p>Phone: +123456789</p>
+                                        <div class="text-center">
+                                            <label class="btn btn-outline-primary">
+                                                Update Profile Picture
+                                                <input type="file" class="account-settings-fileinput">
+                                            </label>
+                                        </div>
+                                        <button type="button" class="btn btn-primary mt-3" id="edit-info">Edit
+                                            Information</button>
+                                    </div>
+                                </div>
+                                <hr class="border-light m-0">
+                                <div class="card-body text-center" id="edit-info-section" style="display: none;">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="updateName">Name</label>
+                                            <input type="text" class="form-control" id="updateName"
+                                                value="Nelle Maxwell">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="updateUsername">Username</label>
+                                            <input type="text" class="form-control" id="updateUsername"
+                                                value="nmaxwell">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="updateAddress">Address</label>
+                                            <input type="text" class="form-control" id="updateAddress"
+                                                value="123 Main St, Cityville">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="updateEmail">Email</label>
+                                            <input type="text" class="form-control" id="updateEmail"
+                                                value="nmaxwell@mail.com">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="updatePhone">Phone</label>
+                                            <input type="text" class="form-control" id="updatePhone"
+                                                value="+123456789">
+                                        </div>
+                                        <button type="button" class="btn btn-primary" id="save-profile">Save Changes
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="account-change-password">
+                                <div class="card-body">
+                                    <h3>Change Password</h3>
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="oldPassword">Old Password</label>
+                                            <input type="password" class="form-control" id="oldPassword">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="newPassword">New Password</label>
+                                            <input type="password" class="form-control" id="newPassword">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="confirmPassword">Confirm Password</label>
+                                            <input type="password" class="form-control" id="confirmPassword">
+                                        </div>
+                                        <button type="button" class="btn btn-primary" id="change-password-btn">Change Password</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="account-info">
+                                <!-- Create Event Content -->
+                                <div class="card-body">
+                                    <h3>Create Event</h3>
+                                    <button type="button" class="btn btn-primary" id="create-event-btn">Create Event</button>
+                                    <div id="event-form-fields" style="display: none;">
+                                        <form id="event-form">
+                                            <div class="form-group">
+                                                <label for="eventName">Event Name</label>
+                                                <input type="text" class="form-control" id="eventName" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="eventType">Event Type</label>
+                                                <input type="text" class="form-control" id="eventType" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="eventDate">Event Date</label>
+                                                <input type="date" class="form-control" id="eventDate" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="eventTime">Event Time</label>
+                                                <input type="time" class="form-control" id="eventTime" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="eventLocation">Event Location</label>
+                                                <input type="text" class="form-control" id="eventLocation" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="eventPin">Event PIN</label>
+                                                <input type="text" class="form-control" id="eventPin" required>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!-- Save Event Button -->
+                                    <div class="card-body">
+                                        <button type="button" class="btn btn-success" id="save-event-btn" style="display: none;">Save Event</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="account-social-links">
+                                <!-- Social Links Content -->
+                                <!-- ... -->
+                            </div>
+                            <div class="tab-pane fade" id="account-connections">
+                                <!-- Connections Content -->
+                                <!-- ... -->
+                            </div>
+                            <div class="tab-pane fade" id="account-notifications">
+                                <!-- Notifications Content -->
+                                <!-- ... -->
+                            </div>
+                            <div class="tab-pane fade" id="dashboard">
+                                <div class="card-body">
+                                    <h3>Dashboard</h3>
+                                    <button type="button" class="btn btn-primary" id="create-line-graph-btn">Create Line Graph</button>
+                                    <div class="line-chart-container">
+                                        <canvas id="lineChartCanvas"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer text-right">
+                <a href="file:///E:/MsOffice%20L/Project%20web%20pr/webbb/index.html" class="btn btn-primary">Sign Out</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="pro.js"></script>
+</body>
+
+</html>
